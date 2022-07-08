@@ -1,10 +1,10 @@
 class Solution:
     def longestPalindrome(self, s: str) -> int:
-        hash = set()
+        hash = []
         
         for c in s:
             if c not in hash:
-                hash.add(c)
+                hash.append(c)
             else:
                 hash.remove(c)
       
