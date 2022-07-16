@@ -8,8 +8,8 @@ class Solution:
                 stones.remove(y)
             else:
                 stones.append(y-x)
-                stones.remove(y)
                 stones.remove(x)
+                stones.remove(y)
         if(len(stones) == 0):
             return 0
         else:
