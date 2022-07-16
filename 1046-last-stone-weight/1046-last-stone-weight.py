@@ -1,19 +1,16 @@
 class Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:
         while(len(stones) > 1):
-            x = sorted(stones)[-1]
-            y = sorted(stones)[-2]
+            x = sorted(stones)[-2]
+            y = sorted(stones)[-1]
             if(x == y):
                 stones.remove(x)
                 stones.remove(y)
             else:
-                # stones.append(abs(x-y))
-                stones.append(x-y)
-                print(x-y)
-                print(abs(x-y))
-                stones.remove(x)
+                stones.append(y-x)
                 stones.remove(y)
+                stones.remove(x)
         if(len(stones) == 0):
             return 0
         else:
-            return(stones[0])
+            return stones[0]
