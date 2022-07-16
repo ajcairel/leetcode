@@ -7,7 +7,10 @@ class Solution:
                 stones.remove(x)
                 stones.remove(y)
             else:
-                stones.append(abs(x-y))
+                # stones.append(abs(x-y))
+                stones.append(x-y)
+                print(x-y)
+                print(abs(x-y))
                 stones.remove(x)
                 stones.remove(y)
         if(len(stones) == 0):
