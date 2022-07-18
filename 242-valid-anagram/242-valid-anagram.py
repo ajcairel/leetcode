@@ -2,8 +2,8 @@ class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         counter = {}
             
-        if len(s) != len(t):
-            return False
+        # if len(s) != len(t):
+        #     return False
         
         for char in s:
             if char not in counter:
