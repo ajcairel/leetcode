@@ -9,3 +9,9 @@ class Solution:
                 high = mid
         return low
         
+        
+        # Binary search 
+        # low is index 0
+        # high is the length
+        # middle is low + high // 2
+      
