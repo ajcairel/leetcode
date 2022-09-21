@@ -1,17 +1,17 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         
-        parens = {'(':')', '[':']', '{':'}'}
+        parens = {'(': ')', '{':'}', '[':']'}
         stack = []
         
-        for p in s:
-            if p in parens:
-                stack.append(p)
-            elif len(stack) == 0 or parens[stack.pop()] != p:
+        for thing in s:
+            if thing in parens:
+                stack.append(thing)
+            elif len(stack) == 0 or parens[stack.pop()] != thing:
                 return False
             
-        return len(stack) == 0
-        
+        return len(stack) == 0 
+   
     
 	
 # 1. if it's the left bracket then we append it to the stack
