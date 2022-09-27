@@ -1,16 +1,17 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         
-        parens = {'(': ')', '{':'}', '[':']'}
+        parens = {'[':']', '{':'}', '(':')'}
         stack = []
         
-        for thing in s:
-            if thing in parens:
-                stack.append(thing)
-            elif len(stack) == 0 or parens[stack.pop()] != thing:
+        for p in s:
+            if p in parens:
+                stack.append(p)
+            elif len(stack) == 0 or parens[stack.pop()] != p:
                 return False
             
-        return len(stack) == 0 
+        return len(stack) == 0
+    
    
     
 	
