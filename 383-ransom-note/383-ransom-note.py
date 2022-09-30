@@ -1,10 +1,14 @@
 class Solution:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
-        for letter in ransomNote:
-            if letter not in magazine:
+        
+        for l in ransomNote:
+            if l not in magazine:
                 return False
-            magazine = magazine.replace(letter, '', 1)
+            else:
+                magazine = magazine.replace(l, '', 1)
+        
         return True
+        
     
     
     # For every letter in ransomNote:
