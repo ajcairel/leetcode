@@ -11,6 +11,7 @@ class Solution:
                 return False
         
         return len(stack) == 0
+      
         
  
     
