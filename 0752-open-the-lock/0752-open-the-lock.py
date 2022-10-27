@@ -7,13 +7,17 @@ class Solution:
         
         def children(lock):
             res = []
+            
             for i in range(4):
                 digit = str((int(lock[i]) + 1) % 10)
                 res.append(lock[:i] + digit + lock[i+1:])
                 digit = str((int(lock[i]) - 1 + 10) % 10)
                 res.append(lock[:i] + digit + lock[i+1:])
+                
             return res
-        
+            
+            
+            
         q = deque()
         q.append(["0000", 0]) #lock, turns
         visits = set(deadends)
@@ -26,8 +30,10 @@ class Solution:
                 if child not in visits:
                     visits.add(child)
                     q.append([child, turns + 1])
-                    
+        
         return -1
+        
+      
 
     
         
