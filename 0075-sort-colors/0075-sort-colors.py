@@ -5,9 +5,8 @@ class Solution:
         """
         
         left = 0
-        mid = 0
+        mid = 0 
         right = len(nums) - 1
-        
         
         while mid <= right:
             if nums[mid] == 0:
@@ -19,6 +18,9 @@ class Solution:
             else:
                 nums[right], nums[mid] = nums[mid], nums[right]
                 right -= 1
+        
+        
+   
         
         
   
