@@ -4,7 +4,6 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         
-        
         left = 0
         mid = 0
         right = len(nums) - 1
@@ -19,6 +18,10 @@ class Solution:
             else:
                 nums[right], nums[mid] = nums[mid], nums[right]
                 right -= 1
+                
+        
+        
+    
         
         
       
