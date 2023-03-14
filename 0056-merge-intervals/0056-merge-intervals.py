@@ -6,10 +6,11 @@ class Solution:
         
         for start, end in intervals[1:]:
             if output[-1][1] >= start:
-                output[-1][1] = max(end, output[-1][1])
+                output[-1][1] = max(output[-1][1], end)
             else:
                 output.append([start, end])
+                
         return output
-        
+       
         
        
