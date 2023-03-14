@@ -1,9 +1,11 @@
 class Solution:
     def insert(self, intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:
 
-        s, e = newInterval[0], newInterval[1]
+        s, e = newInterval
         left, right = [], []
         for i in intervals:
+            print(i[1])
+            print(i[0])
             if i[1] < s:
                 left += i,
             elif i[0] > e:
