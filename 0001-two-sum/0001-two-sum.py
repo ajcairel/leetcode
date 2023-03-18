@@ -1,19 +1,15 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
 
-                
-                
-        dic = {}
+        pairs = {}
         
-        for i, num in enumerate(nums):
-            if num in dic:
-                return [dic[num], i]
+        for index, num in enumerate(nums):
+            if num in pairs:
+                return [pairs[num], index]
             else:
-                dic[target - num] = i
+                pairs[target - num] = index
                 
-           
-        
-        
+       
                 
         
 #             The key to the problem is that there is ALWAYS only 1 pair of numbers that satisfy the condition of adding together to be the target value.
