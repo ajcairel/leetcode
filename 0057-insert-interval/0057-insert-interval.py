@@ -9,7 +9,6 @@ class Solution:
                 right += i,
             elif i[1] < start:
                 left += i,
-            
             else:
                 start = min(start, i[0])
                 end = max(end, i[1])
