@@ -6,12 +6,18 @@ class Solution:
 #         for num in nums:
 #             if chars[num] == 1:
 #                 return num
-        counts = {}
+#         counts = {}
+    
+#         for num in nums:
+#             counts[num] = counts.get(num, 0) + 1
+        
+#         for n in counts:
+#             if counts[n] == 1:
+#                 return n
+        xor = 0
     
         for num in nums:
-            counts[num] = counts.get(num, 0) + 1
+            xor ^= num
         
-        for n in counts:
-            if counts[n] == 1:
-                return n
+        return xor
         
