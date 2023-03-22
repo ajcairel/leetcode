@@ -3,26 +3,28 @@ class Solution:
         
         # return Counter(s) == Counter(t) 
         # return sorted(s) == sorted(t)
-
+        
         if len(s) != len(t):
             return False
-
-        counter = {}
-
-        for char in s:
-            counter[char] = counter.get(char, 0) + 1
         
-        for char in t:
-            if char not in counter:
+        chars = {}
+        
+        for c in s:
+            chars[c] = chars.get(c, 0) + 1
+            
+        for c in t:
+            if c not in chars:
                 return False
             else:
-                counter[char] -= 1
-
-        for val in counter.values():
+                chars[c] -= 1
+                
+        for val in chars.values():
             if val != 0:
                 return False
         
         return True
+
+      
         
 
     
