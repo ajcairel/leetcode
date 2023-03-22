@@ -12,8 +12,10 @@ class Solution:
             else:
                 start = min(start, i[0])
                 end = max(end, i[1])
-                
-        return left + [[start, end]] + right
+        
+        return left + [[start,end]] + right
+        
+      
         
      
         
