@@ -9,9 +9,11 @@ class Solution:
                 chars.append(c)
             else:
                 chars.remove(c)
+        if len(chars) != 0:
+            return len(s) - len(chars) + 1
+        else:
+            return len(s)
         
-        return len(s) - len(chars) + 1 if len(chars) > 0 else len(s)
-    
  
 
     
