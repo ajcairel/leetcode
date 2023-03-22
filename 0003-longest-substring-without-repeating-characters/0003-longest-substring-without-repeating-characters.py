@@ -7,7 +7,7 @@ class Solution:
         maxLength = 0
         
         for index, char in enumerate(s):
-            if char in chars and chars[char] >= start:
+            if char in chars and start <= chars[char]:
                 start = chars[char] + 1
             else:
                 maxLength = max(maxLength, index - start + 1)
