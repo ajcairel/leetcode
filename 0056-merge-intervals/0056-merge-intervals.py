@@ -7,10 +7,14 @@ class Solution:
         for start, end in intervals[1:]:
             if start <= output[-1][1]:
                 output[-1][1] = max(output[-1][1], end)
-            else: 
+            else:
                 output.append([start, end])
                 
         return output
+        
+        
+       
+        
         
        
         
