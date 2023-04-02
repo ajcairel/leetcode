@@ -14,7 +14,7 @@ class Solution:
                 end = max(end, i[1])
         
         return left + [[start,end]] + right
-        
+      
       
         
      
