@@ -15,8 +15,8 @@ class Solution:
                 elif t == '*':
                     stack.append(l * r)
                 else:
-                    stack.append(int(float(l / r)))
-                    
+                    stack.append(int(float(l/r)))
+        
         return stack.pop()
                 
         
