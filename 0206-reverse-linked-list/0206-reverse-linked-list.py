@@ -12,10 +12,12 @@ class Solution:
         while cur:
             nxt = cur.next
             cur.next = prev
-            prev = cur 
+            prev = cur
             cur = nxt
             
         return prev
+        
+    
         
         
         
