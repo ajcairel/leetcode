@@ -7,8 +7,6 @@ class Solution:
             if num in pairs:
                 return [pairs[num], index]
             else:
-                pairs[target - num] = index
-                
-            
+                pairs[target - num] = index 
 
        
