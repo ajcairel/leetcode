@@ -11,16 +11,15 @@ class Solution:
                 
                 if t == '+':
                     stack.append(l + r)
-                elif t == '-':
+                elif t =='-':
                     stack.append(l - r)
                 elif t == '*':
                     stack.append(l * r)
-                else: 
+                else:
                     stack.append(int(float(l / r)))
-                                 
         
         return stack.pop()
-  
         
+   
        
         
