@@ -9,6 +9,6 @@ class Solution:
             else:
                 pairs[target - num] = index
                 
-            
+        
         
      
