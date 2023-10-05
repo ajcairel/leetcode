@@ -2,6 +2,7 @@ class Solution:
     def isValid(self, s: str) -> bool:
         
         parens = {'{':'}', '[':']', '(':')'}
+        
         stack = []
         
         for p in s:
@@ -11,6 +12,5 @@ class Solution:
                 return False
             
         return len(stack) == 0
-                
       
         
