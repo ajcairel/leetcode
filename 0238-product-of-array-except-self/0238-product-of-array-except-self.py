@@ -12,11 +12,8 @@ class Solution:
             ans[~i] *= right
             left *= nums[i]
             right *= nums[~i]
-         
             
         return ans
-       
-
          
         
         
