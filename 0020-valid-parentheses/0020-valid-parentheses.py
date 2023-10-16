@@ -1,7 +1,7 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         
-        parens = {'{':'}', '[':']', '(':')'}
+        parens = {'[':']','{':'}', '(':')' }
         
         stack = []
         
@@ -12,5 +12,4 @@ class Solution:
                 return False
             
         return len(stack) == 0
-      
         
