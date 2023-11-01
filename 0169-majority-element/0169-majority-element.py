@@ -3,16 +3,16 @@ class Solution:
         
         count = {}
         
-        ans, major = 0, 0 
+        major, ans = 0, 0 
         
-        for n in nums:
-            count[n] = count.get(n, 0) + 1
-            ans = n if count[n] > major else ans
-            major = max(count[n], major)
+        for num in nums:
+            count[num] = count.get(num, 0) + 1
+            ans = num if count[num] > major else ans
+            major = max(count[num], major)
             
         return ans
         
-   
+     
        
 
         
