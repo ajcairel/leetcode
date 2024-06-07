@@ -13,7 +13,6 @@ class Solution:
             right *= nums[~i]
             
         return ans
-        
      
         
      
