@@ -1,11 +1,10 @@
 class Solution:
     def isValid(self, s: str) -> bool:
         
-        parens = {'[':']','{':'}', '(':')' }
-        
+        parens = {"(":")", "[":"]", "{":"}"}
         stack = []
         
-        for p in s:
+        for p in s: 
             if p in parens:
                 stack.append(p)
             elif len(stack) == 0 or parens[stack.pop()] != p:
