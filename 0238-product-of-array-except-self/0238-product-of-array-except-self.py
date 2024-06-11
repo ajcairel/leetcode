@@ -8,13 +8,13 @@ class Solution:
         
         for i in range(len(nums)):
             ans[i] *= left
-            ans[~i] *= right
+            ans[~i] *= right 
             left *= nums[i]
             right *= nums[~i]
             
         return ans
-     
         
+      
      
      
         
